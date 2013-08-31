@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Wildfly Model Reference</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/main.css">
+
+    <script src="http://wildscribe.github.io/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://wildscribe.github.io/index.html">Wildfly Model Reference</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="http://wildscribe.github.io/index.html">Home</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP
+                                6.1.0</a></li>
+                            <li class=" active">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/index.html">JBoss EAP
+                                6.0.0</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Beta1/index.html">Wildfly
+                                8.0.0.Beta1</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.0.0/index.html">JBoss AS7
+                                7.0.0</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.jboss.com">Get JBoss EAP</a></li>
+                <li><a href="http://www.wildfly.org">Get Wildfly</a></li>
+                <li class=""><a href="http://wildscribe.github.io/about.html">About</a></li>
+
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="page-header">
+        <h1>JBoss EAP 6.0.0 Model Reference</h1>
+    </div>
+
+    <ol class="breadcrumb">
+                    <li class="active">JBoss EAP 6.0.0</li>
+    </ol>
+
+    <div class="well">
+        <p>The root node of the server-level management model.</p>
+    </div>
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#children">Children
+            (9)</h3>
+
+        <div class="collapse in" id="children">
+            <ul>
+                    <li>
+
+                                <b>core-service</b>
+                        Core services provided by the server.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/core-service/service-container/index.html">
+                                        service-container
+                                    </a>
+                                    The central container that manages all services in a running standalone server or in a host controller in a management domain.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/core-service/vault/index.html">
+                                        vault
+                                    </a>
+                                    Security Vault for attributes.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/core-service/server-environment/index.html">
+                                        server-environment
+                                    </a>
+                                    The server environment.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/core-service/module-loading/index.html">
+                                        module-loading
+                                    </a>
+                                    The modular classloading system.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/core-service/platform-mbean/index.html">
+                                        platform-mbean
+                                    </a>
+                                    Provides the management interface for monitoring and management of the Java virtual machine as well as the operating system on which the Java virtual machine is running. Exposes the JDK-provided JMX MBeans in the java.lang, java.nio and java.util.logging JMX domains.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/core-service/management/index.html">
+                                        management
+                                    </a>
+                                    The management services used to control a server or a host's host controller.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/core-service/patching/index.html">
+                                        patching
+                                    </a>
+                                    patch
+                                </li>
+                        </ul>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/deployment/index.html">
+                                deployment
+                            </a>
+                        A list of deployments available for use on the server.
+
+                    </li>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/deployment-overlay/index.html">
+                                deployment-overlay
+                            </a>
+                        A list of deployment overlays available for use by the server
+
+                    </li>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/extension/index.html">
+                                extension
+                            </a>
+                        A list of extension modules.
+
+                    </li>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/interface/index.html">
+                                interface
+                            </a>
+                        A list of named network interfaces available for use on the server.
+
+                    </li>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/path/index.html">
+                                path
+                            </a>
+                        A list of named filesystem paths.
+
+                    </li>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/socket-binding-group/index.html">
+                                socket-binding-group
+                            </a>
+                        A list of socket bindings available for use on the server.
+
+                    </li>
+                    <li>
+
+                                <b>subsystem</b>
+                        The subsystems that make up the server's profile.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jaxrs/index.html">
+                                        jaxrs
+                                    </a>
+                                    The configuration of the JAX-RS subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jacorb/index.html">
+                                        jacorb
+                                    </a>
+                                    The JacORB subsystem configuration.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/io/index.html">
+                                        io
+                                    </a>
+                                    IO subsystem
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jsf/index.html">
+                                        jsf
+                                    </a>
+                                    The JSF subsystem
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jca/index.html">
+                                        jca
+                                    </a>
+                                    The Java EE Connector Architecture (JCA) subsystem providing general configuration for resource adapters
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jmx/index.html">
+                                        jmx
+                                    </a>
+                                    The configuration of the JMX subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/threads/index.html">
+                                        threads
+                                    </a>
+                                    The threading subsystem, used to declare manageable thread pools and resources.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/webservices/index.html">
+                                        webservices
+                                    </a>
+                                    The configuration of the web services subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/sar/index.html">
+                                        sar
+                                    </a>
+                                    The SAR subsystem allowing you to deploy sar archives containing MBeans configured by META-INF/jboss-service.xml
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/remoting/index.html">
+                                        remoting
+                                    </a>
+                                    The configuration of the Remoting subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/infinispan/index.html">
+                                        infinispan
+                                    </a>
+                                    The configuration of the infinispan subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/weld/index.html">
+                                        weld
+                                    </a>
+                                    The configuration of the weld subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/ejb3/index.html">
+                                        ejb3
+                                    </a>
+                                    The configuration of the ejb3 subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/transactions/index.html">
+                                        transactions
+                                    </a>
+                                    The configuration of the transaction subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/datasources/index.html">
+                                        datasources
+                                    </a>
+                                    The data-sources subsystem, used to declare JDBC data-sources
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/deployment-scanner/index.html">
+                                        deployment-scanner
+                                    </a>
+                                    An individual deployment scanner that scans a particular location
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/logging/index.html">
+                                        logging
+                                    </a>
+                                    The configuration of the logging subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jdr/index.html">
+                                        jdr
+                                    </a>
+                                    JBoss Diagnostic Reporter (JDR) Subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/undertow/index.html">
+                                        undertow
+                                    </a>
+                                    Undertow subsystem
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/messaging/index.html">
+                                        messaging
+                                    </a>
+                                    The messaging subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/pojo/index.html">
+                                        pojo
+                                    </a>
+                                    Support JBoss5 and JBoss6 pojo configuration model.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jpa/index.html">
+                                        jpa
+                                    </a>
+                                    The configuration of the JPA subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/naming/index.html">
+                                        naming
+                                    </a>
+                                    The configuration of the naming subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/ee/index.html">
+                                        ee
+                                    </a>
+                                    The configuration of the EE subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/mail/index.html">
+                                        mail
+                                    </a>
+                                    The mail subsystem
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/jsr77/index.html">
+                                        jsr77
+                                    </a>
+                                    The configuration of the JSR-77 subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/resource-adapters/index.html">
+                                        resource-adapters
+                                    </a>
+                                    Configuration of the resource adapters subsystem.
+                                </li>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/subsystem/security/index.html">
+                                        security
+                                    </a>
+                                    The configuration of the security subsystem.
+                                </li>
+                        </ul>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/system-property/index.html">
+                                system-property
+                            </a>
+                        A list of system properties to set on the server.
+
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#attributes">Attributes
+            (15)</h3>
+
+        <div class="collapse in" id="attributes">
+            <ul>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-launch-type">
+                            launch-type
+                        </a>
+                        The manner in which the server process was launched. Either "DOMAIN" for a domain mode server launched by a Host Controller, "STANDALONE" for a standalone server launched from the command line, or "EMBEDDED" for a standalone server launched as an embedded part of an application running in the same virtual machine.
+                    </li>
+
+                    <div id="operation-launch-type" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-management-major-version">
+                            management-major-version
+                        </a>
+                        The major version of the JBoss AS management interface that is provided by this server.
+                    </li>
+
+                    <div id="operation-management-major-version" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-management-micro-version">
+                            management-micro-version
+                        </a>
+                        The micro version of the JBoss AS management interface that is provided by this server.
+                    </li>
+
+                    <div id="operation-management-micro-version" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-management-minor-version">
+                            management-minor-version
+                        </a>
+                        The minor version of the JBoss AS management interface that is provided by this server.
+                    </li>
+
+                    <div id="operation-management-minor-version" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-name">
+                            name
+                        </a>
+                        The name of this server. If not set, defaults to the runtime value of InetAddress.getLocalHost().getHostName().
+                    </li>
+
+                    <div id="operation-name" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-namespaces">
+                            namespaces
+                        </a>
+                        Map of namespaces used in the configuration XML document, where keys are namespace prefixes and values are schema URIs.
+                    </li>
+
+                    <div id="operation-namespaces" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-process-type">
+                            process-type
+                        </a>
+                        The type of process represented by this root resource. Always has a value of "Server" for a server resource.
+                    </li>
+
+                    <div id="operation-process-type" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-product-name">
+                            product-name
+                        </a>
+                        The name of the JBoss AS based product that is being run by this server.
+                    </li>
+
+                    <div id="operation-product-name" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-product-version">
+                            product-version
+                        </a>
+                        The version of the JBoss AS based product release that is being run by this server.
+                    </li>
+
+                    <div id="operation-product-version" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-profile-name">
+                            profile-name
+                        </a>
+                        The name of the server's configuration profile.
+                    </li>
+
+                    <div id="operation-profile-name" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-release-codename">
+                            release-codename
+                        </a>
+                        The codename of the JBoss Application Server release this server is running.
+                    </li>
+
+                    <div id="operation-release-codename" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-release-version">
+                            release-version
+                        </a>
+                        The version of the JBoss Application Server release this server is running.
+                    </li>
+
+                    <div id="operation-release-version" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-running-mode">
+                            running-mode
+                        </a>
+                        The current running mode of the server. Either NORMAL (normal operations) or ADMIN_ONLY.  An ADMIN_ONLY server will start any configured management interfaces and accept management requests, but will not start services used for handling end user requests.
+                    </li>
+
+                    <div id="operation-running-mode" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-schema-locations">
+                            schema-locations
+                        </a>
+                        Map of locations of XML schemas used in the configuration XML document, where keys are schema URIs and values are locations where the schema can be found.
+                    </li>
+
+                    <div id="operation-schema-locations" class="collapse">
+                        More Info
+                    </div>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-server-state">
+                            server-state
+                        </a>
+                        The current state of the server controller; either STARTING, RUNNING or RESTART_REQUIRED
+                    </li>
+
+                    <div id="operation-server-state" class="collapse">
+                        More Info
+                    </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#operations">Operations
+            (31)</h3>
+
+        <div class="collapse in" id="operations">
+            <ul>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-add-namespace">
+                            add-namespace
+                        </a>
+                        Adds a namespace prefix mapping to the namespaces attribute's map.
+
+                        <div id="operation-add-namespace" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-add-schema-location">
+                            add-schema-location
+                        </a>
+                        Adds a schema location mapping to the schema-locations attribute's map.
+
+                        <div id="operation-add-schema-location" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-delete-snapshot">
+                            delete-snapshot
+                        </a>
+                        Deletes a snapshot from the snapshots directory
+
+                        <div id="operation-delete-snapshot" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-full-replace-deployment">
+                            full-replace-deployment
+                        </a>
+                        Add previously uploaded deployment content to the list of content available for use, replace existing content of the same name in the runtime, and remove the replaced content from the list of content available for use. This is equivalent to an 'add', 'undeploy', 'deploy', 'remove' sequence where the new content has the same name as the content being replaced. Precisely one of 'runtime-name', 'hash', 'input-stream-index', 'bytes' or 'url' must be specified.
+
+                        <div id="operation-full-replace-deployment" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-list-snapshots">
+                            list-snapshots
+                        </a>
+                        Lists the snapshots
+
+                        <div id="operation-list-snapshots" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-attribute">
+                            read-attribute
+                        </a>
+                        Gets the value of an attribute for the selected resource
+
+                        <div id="operation-read-attribute" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-names">
+                            read-children-names
+                        </a>
+                        Gets the names of all children under the selected resource with the given type
+
+                        <div id="operation-read-children-names" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-resources">
+                            read-children-resources
+                        </a>
+                        Reads information about all of a resource's children that are of a given type
+
+                        <div id="operation-read-children-resources" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-types">
+                            read-children-types
+                        </a>
+                        Gets the type names of all the children under the selected resource
+
+                        <div id="operation-read-children-types" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-config-as-xml">
+                            read-config-as-xml
+                        </a>
+                        Reads the current configuration and returns it in XML format.
+
+                        <div id="operation-read-config-as-xml" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-operation-description">
+                            read-operation-description
+                        </a>
+                        Gets description of given operation
+
+                        <div id="operation-read-operation-description" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-operation-names">
+                            read-operation-names
+                        </a>
+                        Gets the names of all the operations for the given resource
+
+                        <div id="operation-read-operation-names" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-resource">
+                            read-resource
+                        </a>
+                        Reads a model resource's attribute values along with either basic or complete information about any child resources
+
+                        <div id="operation-read-resource" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-resource-description">
+                            read-resource-description
+                        </a>
+                        Gets the description of a resource's attributes, types of children and, optionally, operations
+
+                        <div id="operation-read-resource-description" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-reload">
+                            reload
+                        </a>
+                        Reloads the server by shutting down all its services and starting again. The JVM itself is not restarted.
+
+                        <div id="operation-reload" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-remove-namespace">
+                            remove-namespace
+                        </a>
+                        Removes a namespace prefix mapping from the namespaces attribute's map.
+
+                        <div id="operation-remove-namespace" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-remove-schema-location">
+                            remove-schema-location
+                        </a>
+                        Removes a schema location mapping from the schema-locations attribute's map.
+
+                        <div id="operation-remove-schema-location" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-replace-deployment">
+                            replace-deployment
+                        </a>
+                        Replace existing content in the runtime with new content. The new content must have been previously uploaded to the deployment content repository.
+
+                        <div id="operation-replace-deployment" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-resolve-expression">
+                            resolve-expression
+                        </a>
+                        Operation that accepts an expression as input (or a string that can be parsed into an expression) and resolves it against the local system properties and environment variables.
+
+                        <div id="operation-resolve-expression" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-resolve-internet-address">
+                            resolve-internet-address
+                        </a>
+                        Takes a set of interface resolution criteria and finds an IP address on the local machine that matches the criteria, or fails if no matching IP address can be found.
+
+                        <div id="operation-resolve-internet-address" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-server-set-restart-required">
+                            server-set-restart-required
+                        </a>
+                        Puts the server into a restart-required mode.
+
+                        <div id="operation-server-set-restart-required" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-shutdown">
+                            shutdown
+                        </a>
+                        Shuts down the server via a call to System.exit(0)
+
+                        <div id="operation-shutdown" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-take-snapshot">
+                            take-snapshot
+                        </a>
+                        Takes a snapshot of the current configuration
+
+                        <div id="operation-take-snapshot" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-undefine-attribute">
+                            undefine-attribute
+                        </a>
+                        Sets the value of an attribute of the selected resource to 'undefined'
+
+                        <div id="operation-undefine-attribute" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-upload-deployment-bytes">
+                            upload-deployment-bytes
+                        </a>
+                        Indicates that the deployment content in the included byte array should be added to the deployment content repository. Note that this operation does not indicate the content should be deployed into the runtime.
+
+                        <div id="operation-upload-deployment-bytes" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-upload-deployment-stream">
+                            upload-deployment-stream
+                        </a>
+                        Indicates that the deployment content available at the included input stream index should be added to the deployment content repository. Note that this operation does not indicate the content should be deployed into the runtime.
+
+                        <div id="operation-upload-deployment-stream" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-upload-deployment-url">
+                            upload-deployment-url
+                        </a>
+                        Indicates that the deployment content available at the included URL should be added to the deployment content repository. Note that this operation does not indicate the content should be deployed into the runtime.
+
+                        <div id="operation-upload-deployment-url" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-validate-address">
+                            validate-address
+                        </a>
+                        Checks whether a resource with the address passed in as the argument exists.
+
+                        <div id="operation-validate-address" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-validate-operation">
+                            validate-operation
+                        </a>
+                        Validates that an operation is valid according to its description. Any errors present will be shown in the operation's failure-description.
+
+                        <div id="operation-validate-operation" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-whoami">
+                            whoami
+                        </a>
+                        Returns the identity of the currently authenticated user.
+
+                        <div id="operation-whoami" class="collapse">
+                            More info
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-write-attribute">
+                            write-attribute
+                        </a>
+                        Sets the value of an attribute for the selected resource
+
+                        <div id="operation-write-attribute" class="collapse">
+                            More info
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <hr>
+
+    <footer>
+        <p>&copy; Red Hat Pty Ltd 2013</p>
+    </footer>
+</div>
+<!-- /container -->
+<script src="http://wildscribe.github.io/js/vendor/jquery-1.10.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wildscribe.github.io/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+<script src="http://wildscribe.github.io/js/vendor/bootstrap.min.js"></script>
+
+<script src="http://wildscribe.github.io/js/main.js"></script>
+
+</body>
+</html>
