@@ -48,18 +48,15 @@
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Alpha4/index.html">Wildfly
+                                8.0.0.Alpha4</a></li>
                             <li class=" active">
                                 <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP
                                 6.1.0</a></li>
                             <li class=" ">
-                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/index.html">JBoss EAP
-                                6.0.0</a></li>
-                            <li class=" ">
-                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Beta1/index.html">Wildfly
-                                8.0.0.Beta1</a></li>
-                            <li class=" ">
-                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.0.0/index.html">JBoss AS7
-                                7.0.0</a></li>
+                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.1.1/index.html">JBoss AS7
+                                7.1.1</a></li>
                     </ul>
                 </li>
                 <li><a href="http://www.jboss.com">Get JBoss EAP</a></li>
@@ -73,37 +70,28 @@
 </div>
 
 <div class="container">
-    <div class="page-header">
-        <h1>JBoss EAP 6.1.0 Model Reference</h1>
-    </div>
+<div class="page-header">
+    <h1>JBoss EAP 6.1.0 Model Reference</h1>
+</div>
 
-    <ol class="breadcrumb">
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP 6.1.0</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Findex.html">subsystem=messaging</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Fhornetq-server%2Findex.html">hornetq-server</a>
-                </li>
-                    <li class="active">discovery-group</li>
-    </ol>
+<ol class="breadcrumb">
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP 6.1.0</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Findex.html">subsystem=messaging</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Fhornetq-server%2Findex.html">hornetq-server</a>
+            </li>
+                <li class="active">discovery-group</li>
+</ol>
 
-    <div class="well">
-        <p>Multicast group to listen to receive broadcast from other servers announcing their connectors.</p>
-    </div>
+<div class="well">
+    <p>Multicast group to listen to receive broadcast from other servers announcing their connectors.</p>
+</div>
 
-    <div class="page-header">
 
-        <h3 class="resource-header" data-toggle="collapse" data-target="#children">Children
-            (0)</h3>
-
-        <div class="collapse in" id="children">
-            <ul>
-            </ul>
-        </div>
-    </div>
 
     <div class="page-header">
 
@@ -111,90 +99,358 @@
             (8)</h3>
 
         <div class="collapse in" id="attributes">
-            <ul>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-group-address">
-                            group-address
-                        </a>
-                        (Deprecated) Multicast IP address of the group to listen on.
-                    </li>
+            <div class="panel">
+                <ul>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-group-address">
+                                group-address
+                            </a>
+                            (Deprecated) Multicast IP address of the group to listen on.
+                        </li>
 
-                    <div id="operation-group-address" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-group-port">
-                            group-port
-                        </a>
-                        (Deprecated) UDP port of the multicast group.
-                    </li>
+                        <div id="operation-group-address" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-group-port">
+                                group-port
+                            </a>
+                            (Deprecated) UDP port of the multicast group.
+                        </li>
 
-                    <div id="operation-group-port" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-initial-wait-timeout">
-                            initial-wait-timeout
-                        </a>
-                        Period, in ms, to wait for an initial broadcast to give us at least one node in the cluster.
-                    </li>
+                        <div id="operation-group-port" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-initial-wait-timeout">
+                                initial-wait-timeout
+                            </a>
+                            Period, in ms, to wait for an initial broadcast to give us at least one node in the cluster.
+                        </li>
 
-                    <div id="operation-initial-wait-timeout" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-jgroups-channel">
-                            jgroups-channel
-                        </a>
-                        The name used by a JGroups channel to join a cluster.
-                    </li>
+                        <div id="operation-initial-wait-timeout" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            10000
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-jgroups-channel">
+                                jgroups-channel
+                            </a>
+                            The name used by a JGroups channel to join a cluster.
+                        </li>
 
-                    <div id="operation-jgroups-channel" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-jgroups-stack">
-                            jgroups-stack
-                        </a>
-                        The name of a stack defined in the org.jboss.as.clustering.jgroups subsystem that is used to form a cluster.
-                    </li>
+                        <div id="operation-jgroups-channel" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-jgroups-stack">
+                                jgroups-stack
+                            </a>
+                            The name of a stack defined in the org.jboss.as.clustering.jgroups subsystem that is used to form a cluster.
+                        </li>
 
-                    <div id="operation-jgroups-stack" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-local-bind-address">
-                            local-bind-address
-                        </a>
-                        (Deprecated) The local bind address that the datagram socket is bound to.
-                    </li>
+                        <div id="operation-jgroups-stack" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-local-bind-address">
+                                local-bind-address
+                            </a>
+                            (Deprecated) The local bind address that the datagram socket is bound to.
+                        </li>
 
-                    <div id="operation-local-bind-address" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-refresh-timeout">
-                            refresh-timeout
-                        </a>
-                        Period the discovery group waits after receiving the last broadcast from a particular server before removing that server's connector pair entry from its list.
-                    </li>
+                        <div id="operation-local-bind-address" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-refresh-timeout">
+                                refresh-timeout
+                            </a>
+                            Period the discovery group waits after receiving the last broadcast from a particular server before removing that server's connector pair entry from its list.
+                        </li>
 
-                    <div id="operation-refresh-timeout" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-socket-binding">
-                            socket-binding
-                        </a>
-                        The discovery group socket binding.
-                    </li>
+                        <div id="operation-refresh-timeout" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            10000
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-socket-binding">
+                                socket-binding
+                            </a>
+                            The discovery group socket binding.
+                        </li>
 
-                    <div id="operation-socket-binding" class="collapse">
-                        More Info
-                    </div>
-            </ul>
+                        <div id="operation-socket-binding" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </ul>
+            </div>
         </div>
     </div>
+
+
 
     <div class="page-header">
 
@@ -210,7 +466,85 @@
                         Add a discovery group.
 
                         <div id="operation-add" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>refresh-timeout</td>
+                                            <td>LONG</td>
+                                            <td>Period the discovery group waits after receiving the last broadcast from a particular server before removing that server's connector pair entry from its list.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jgroups-stack</td>
+                                            <td>STRING</td>
+                                            <td>The name of a stack defined in the org.jboss.as.clustering.jgroups subsystem that is used to form a cluster.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jgroups-channel</td>
+                                            <td>STRING</td>
+                                            <td>The name used by a JGroups channel to join a cluster.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>group-address</td>
+                                            <td>STRING</td>
+                                            <td>(Deprecated) Multicast IP address of the group to listen on.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>group-port</td>
+                                            <td>INT</td>
+                                            <td>(Deprecated) UDP port of the multicast group.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>local-bind-address</td>
+                                            <td>STRING</td>
+                                            <td>(Deprecated) The local bind address that the datagram socket is bound to.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>socket-binding</td>
+                                            <td>STRING</td>
+                                            <td>The discovery group socket binding.</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>initial-wait-timeout</td>
+                                            <td>LONG</td>
+                                            <td>Period, in ms, to wait for an initial broadcast to give us at least one node in the cluster.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -220,7 +554,37 @@
                         Gets the value of an attribute for the selected resource
 
                         <div id="operation-read-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to get the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -230,7 +594,29 @@
                         Gets the names of all children under the selected resource with the given type
 
                         <div id="operation-read-children-names" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the node under which to get the children names</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -240,7 +626,69 @@
                         Reads information about all of a resource's children that are of a given type
 
                         <div id="operation-read-children-resources" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the resource under which to get the child resources</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to get the children recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default. Ignored if the 'recursive' parameter is set to 'true'; i.e. runtime attributes can only be read in non-recursive queries.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -250,7 +698,13 @@
                         Gets the type names of all the children under the selected resource
 
                         <div id="operation-read-children-types" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -260,7 +714,37 @@
                         Gets description of given operation
 
                         <div id="operation-read-operation-description" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>Name of operation</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>Locale in which to return description</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -270,7 +754,13 @@
                         Gets the names of all the operations for the given resource
 
                         <div id="operation-read-operation-names" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -280,7 +770,77 @@
                         Reads a model resource's attribute values along with either basic or complete information about any child resources
 
                         <div id="operation-read-resource" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include complete information about child resources, recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>attributes-only</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether or not to only read the attributes on the specified resource. Cannot be used in conjunction with 'recursive' or 'recursive-depth'.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-aliases</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'true' and recursive, include children which are aliases.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -290,7 +850,77 @@
                         Gets the description of a resource's attributes, types of children and, optionally, operations
 
                         <div id="operation-read-resource-description" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>operations</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include descriptions of the resource's operations. Default is false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inherited</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'operations' is true, whether to include descriptions of the resource's inherited operations. Default is true.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include recursively descriptions of child resources. Default is false.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-aliases</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'true' and recursive, include children which are aliases.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>The locale to get the resource description in. If null, the default locale will be used</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -300,7 +930,13 @@
                         Remove a discovery group.
 
                         <div id="operation-remove" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -310,7 +946,29 @@
                         Sets the value of an attribute of the selected resource to 'undefined'
 
                         <div id="operation-undefine-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute which should be set to 'undefined'</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -320,7 +978,29 @@
                         Returns the identity of the currently authenticated user.
 
                         <div id="operation-whoami" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>verbose</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If set to true whoami also returns the users roles.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -330,12 +1010,43 @@
                         Sets the value of an attribute for the selected resource
 
                         <div id="operation-write-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to set the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>value</td>
+                                            <td>STRING</td>
+                                            <td>The value of the attribute to set the value for under the selected resource. May be null if the underlying model supports null values.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
             </ul>
         </div>
     </div>
+
 
 </div>
 <div class="container">

@@ -48,18 +48,15 @@
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Alpha4/index.html">Wildfly
+                                8.0.0.Alpha4</a></li>
                             <li class=" active">
                                 <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP
                                 6.1.0</a></li>
                             <li class=" ">
-                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/index.html">JBoss EAP
-                                6.0.0</a></li>
-                            <li class=" ">
-                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Beta1/index.html">Wildfly
-                                8.0.0.Beta1</a></li>
-                            <li class=" ">
-                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.0.0/index.html">JBoss AS7
-                                7.0.0</a></li>
+                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.1.1/index.html">JBoss AS7
+                                7.1.1</a></li>
                     </ul>
                 </li>
                 <li><a href="http://www.jboss.com">Get JBoss EAP</a></li>
@@ -73,43 +70,34 @@
 </div>
 
 <div class="container">
-    <div class="page-header">
-        <h1>JBoss EAP 6.1.0 Model Reference</h1>
-    </div>
+<div class="page-header">
+    <h1>JBoss EAP 6.1.0 Model Reference</h1>
+</div>
 
-    <ol class="breadcrumb">
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP 6.1.0</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Findex.html">subsystem=infinispan</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Fcache-container%2Findex.html">cache-container</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Fcache-container%2Freplicated-cache%2Findex.html">replicated-cache</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Fcache-container%2Freplicated-cache%2Fbinary-keyed-jdbc-store%2FBINARY_KEYED_JDBC_STORE%2Findex.html">binary-keyed-jdbc-store=BINARY_KEYED_JDBC_STORE</a>
-                </li>
-                    <li class="active">property</li>
-    </ol>
+<ol class="breadcrumb">
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP 6.1.0</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Findex.html">subsystem=infinispan</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Fcache-container%2Findex.html">cache-container</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Fcache-container%2Freplicated-cache%2Findex.html">replicated-cache</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Finfinispan%2Fcache-container%2Freplicated-cache%2Fbinary-keyed-jdbc-store%2FBINARY_KEYED_JDBC_STORE%2Findex.html">binary-keyed-jdbc-store=BINARY_KEYED_JDBC_STORE</a>
+            </li>
+                <li class="active">property</li>
+</ol>
 
-    <div class="well">
-        <p>A cache store property with name and value.</p>
-    </div>
+<div class="well">
+    <p>A cache store property with name and value.</p>
+</div>
 
-    <div class="page-header">
 
-        <h3 class="resource-header" data-toggle="collapse" data-target="#children">Children
-            (0)</h3>
-
-        <div class="collapse in" id="children">
-            <ul>
-            </ul>
-        </div>
-    </div>
 
     <div class="page-header">
 
@@ -117,20 +105,55 @@
             (1)</h3>
 
         <div class="collapse in" id="attributes">
-            <ul>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-value">
-                            value
-                        </a>
-                        The value of the cache store property.
-                    </li>
+            <div class="panel">
+                <ul>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-value">
+                                value
+                            </a>
+                            The value of the cache store property.
+                        </li>
 
-                    <div id="operation-value" class="collapse">
-                        More Info
-                    </div>
-            </ul>
+                        <div id="operation-value" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </ul>
+            </div>
         </div>
     </div>
+
+
 
     <div class="page-header">
 
@@ -146,7 +169,29 @@
                         Adds a cache store property.
 
                         <div id="operation-add" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>value</td>
+                                            <td>STRING</td>
+                                            <td>The value of the cache store property.</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>true</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -156,7 +201,37 @@
                         Gets the value of an attribute for the selected resource
 
                         <div id="operation-read-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to get the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -166,7 +241,29 @@
                         Gets the names of all children under the selected resource with the given type
 
                         <div id="operation-read-children-names" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the node under which to get the children names</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -176,7 +273,69 @@
                         Reads information about all of a resource's children that are of a given type
 
                         <div id="operation-read-children-resources" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the resource under which to get the child resources</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to get the children recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default. Ignored if the 'recursive' parameter is set to 'true'; i.e. runtime attributes can only be read in non-recursive queries.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -186,7 +345,13 @@
                         Gets the type names of all the children under the selected resource
 
                         <div id="operation-read-children-types" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -196,7 +361,37 @@
                         Gets description of given operation
 
                         <div id="operation-read-operation-description" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>Name of operation</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>Locale in which to return description</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -206,7 +401,13 @@
                         Gets the names of all the operations for the given resource
 
                         <div id="operation-read-operation-names" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -216,7 +417,77 @@
                         Reads a model resource's attribute values along with either basic or complete information about any child resources
 
                         <div id="operation-read-resource" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include complete information about child resources, recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>attributes-only</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether or not to only read the attributes on the specified resource. Cannot be used in conjunction with 'recursive' or 'recursive-depth'.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-aliases</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'true' and recursive, include children which are aliases.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -226,7 +497,77 @@
                         Gets the description of a resource's attributes, types of children and, optionally, operations
 
                         <div id="operation-read-resource-description" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>operations</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include descriptions of the resource's operations. Default is false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inherited</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'operations' is true, whether to include descriptions of the resource's inherited operations. Default is true.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include recursively descriptions of child resources. Default is false.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-aliases</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'true' and recursive, include children which are aliases.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>The locale to get the resource description in. If null, the default locale will be used</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -236,7 +577,13 @@
                         Removes a cache store property.
 
                         <div id="operation-remove" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -246,7 +593,29 @@
                         Sets the value of an attribute of the selected resource to 'undefined'
 
                         <div id="operation-undefine-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute which should be set to 'undefined'</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -256,7 +625,29 @@
                         Returns the identity of the currently authenticated user.
 
                         <div id="operation-whoami" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>verbose</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If set to true whoami also returns the users roles.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -266,12 +657,43 @@
                         Sets the value of an attribute for the selected resource
 
                         <div id="operation-write-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to set the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>value</td>
+                                            <td>STRING</td>
+                                            <td>The value of the attribute to set the value for under the selected resource. May be null if the underlying model supports null values.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
             </ul>
         </div>
     </div>
+
 
 </div>
 <div class="container">

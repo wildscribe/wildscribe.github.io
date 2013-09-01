@@ -48,18 +48,15 @@
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Alpha4/index.html">Wildfly
+                                8.0.0.Alpha4</a></li>
                             <li class=" active">
                                 <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP
                                 6.1.0</a></li>
                             <li class=" ">
-                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/index.html">JBoss EAP
-                                6.0.0</a></li>
-                            <li class=" ">
-                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Beta1/index.html">Wildfly
-                                8.0.0.Beta1</a></li>
-                            <li class=" ">
-                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.0.0/index.html">JBoss AS7
-                                7.0.0</a></li>
+                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.1.1/index.html">JBoss AS7
+                                7.1.1</a></li>
                     </ul>
                 </li>
                 <li><a href="http://www.jboss.com">Get JBoss EAP</a></li>
@@ -73,37 +70,28 @@
 </div>
 
 <div class="container">
-    <div class="page-header">
-        <h1>JBoss EAP 6.1.0 Model Reference</h1>
-    </div>
+<div class="page-header">
+    <h1>JBoss EAP 6.1.0 Model Reference</h1>
+</div>
 
-    <ol class="breadcrumb">
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP 6.1.0</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Findex.html">subsystem=messaging</a>
-                </li>
-                <li>
-                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Fhornetq-server%2Findex.html">hornetq-server</a>
-                </li>
-                    <li class="active">jms-topic</li>
-    </ol>
+<ol class="breadcrumb">
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP 6.1.0</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Findex.html">subsystem=messaging</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/%2Fsubsystem%2Fmessaging%2Fhornetq-server%2Findex.html">hornetq-server</a>
+            </li>
+                <li class="active">jms-topic</li>
+</ol>
 
-    <div class="well">
-        <p>Defines a JMS topic.</p>
-    </div>
+<div class="well">
+    <p>Defines a JMS topic.</p>
+</div>
 
-    <div class="page-header">
 
-        <h3 class="resource-header" data-toggle="collapse" data-target="#children">Children
-            (0)</h3>
-
-        <div class="collapse in" id="children">
-            <ul>
-            </ul>
-        </div>
-    </div>
 
     <div class="page-header">
 
@@ -111,120 +99,465 @@
             (11)</h3>
 
         <div class="collapse in" id="attributes">
-            <ul>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-delivering-count">
-                            delivering-count
-                        </a>
-                        The number of messages that this queue is currently delivering to its consumers.
-                    </li>
+            <div class="panel">
+                <ul>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-delivering-count">
+                                delivering-count
+                            </a>
+                            The number of messages that this queue is currently delivering to its consumers.
+                        </li>
 
-                    <div id="operation-delivering-count" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-durable-message-count">
-                            durable-message-count
-                        </a>
-                        The number of messages for all durable subscribers for this topic.
-                    </li>
+                        <div id="operation-delivering-count" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-durable-message-count">
+                                durable-message-count
+                            </a>
+                            The number of messages for all durable subscribers for this topic.
+                        </li>
 
-                    <div id="operation-durable-message-count" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-durable-subscription-count">
-                            durable-subscription-count
-                        </a>
-                        The number of durable subscribers for this topic.
-                    </li>
+                        <div id="operation-durable-message-count" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-durable-subscription-count">
+                                durable-subscription-count
+                            </a>
+                            The number of durable subscribers for this topic.
+                        </li>
 
-                    <div id="operation-durable-subscription-count" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-entries">
-                            entries
-                        </a>
-                        The jndi names the topic will be bound to.
-                    </li>
+                        <div id="operation-durable-subscription-count" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-entries">
+                                entries
+                            </a>
+                            The jndi names the topic will be bound to.
+                        </li>
 
-                    <div id="operation-entries" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-message-count">
-                            message-count
-                        </a>
-                        The number of messages currently in this queue.
-                    </li>
+                        <div id="operation-entries" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LIST
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-message-count">
+                                message-count
+                            </a>
+                            The number of messages currently in this queue.
+                        </li>
 
-                    <div id="operation-message-count" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-messages-added">
-                            messages-added
-                        </a>
-                        The number of messages added to this queue since it was created.
-                    </li>
+                        <div id="operation-message-count" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-messages-added">
+                                messages-added
+                            </a>
+                            The number of messages added to this queue since it was created.
+                        </li>
 
-                    <div id="operation-messages-added" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-non-durable-message-count">
-                            non-durable-message-count
-                        </a>
-                        The number of messages for all non-durable subscribers for this topic.
-                    </li>
+                        <div id="operation-messages-added" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-non-durable-message-count">
+                                non-durable-message-count
+                            </a>
+                            The number of messages for all non-durable subscribers for this topic.
+                        </li>
 
-                    <div id="operation-non-durable-message-count" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-non-durable-subscription-count">
-                            non-durable-subscription-count
-                        </a>
-                        The number of non-durable subscribers for this topic.
-                    </li>
+                        <div id="operation-non-durable-message-count" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-non-durable-subscription-count">
+                                non-durable-subscription-count
+                            </a>
+                            The number of non-durable subscribers for this topic.
+                        </li>
 
-                    <div id="operation-non-durable-subscription-count" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-subscription-count">
-                            subscription-count
-                        </a>
-                        The number of (durable and non-durable) subscribers for this topic.
-                    </li>
+                        <div id="operation-non-durable-subscription-count" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-subscription-count">
+                                subscription-count
+                            </a>
+                            The number of (durable and non-durable) subscribers for this topic.
+                        </li>
 
-                    <div id="operation-subscription-count" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-temporary">
-                            temporary
-                        </a>
-                        Whether the topic is temporary.
-                    </li>
+                        <div id="operation-subscription-count" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-temporary">
+                                temporary
+                            </a>
+                            Whether the topic is temporary.
+                        </li>
 
-                    <div id="operation-temporary" class="collapse">
-                        More Info
-                    </div>
-                    <li>
-                        <a data-toggle="collapse" data-target="#operation-topic-address">
-                            topic-address
-                        </a>
-                        The address the topic points to.
-                    </li>
+                        <div id="operation-temporary" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-topic-address">
+                                topic-address
+                            </a>
+                            The address the topic points to.
+                        </li>
 
-                    <div id="operation-topic-address" class="collapse">
-                        More Info
-                    </div>
-            </ul>
+                        <div id="operation-topic-address" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </ul>
+            </div>
         </div>
     </div>
+
+
 
     <div class="page-header">
 
@@ -240,7 +573,29 @@
                         Add a JMS topic.
 
                         <div id="operation-add" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>entries</td>
+                                            <td>LIST</td>
+                                            <td>The jndi names the topic will be bound to.</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>true</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -250,7 +605,29 @@
                         Adds the queue to another JNDI binding
 
                         <div id="operation-add-jndi" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>jndi-binding</td>
+                                            <td>STRING</td>
+                                            <td>Jndi binding</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -260,7 +637,45 @@
                         Count the number of messages matching the filter for the given subscription.
 
                         <div id="operation-count-messages-for-subscription" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>INT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>client-id</td>
+                                            <td>STRING</td>
+                                            <td>The client ID.</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>subscription-name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the durable subscription.</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>filter</td>
+                                            <td>STRING</td>
+                                            <td>A JMS message filter.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -270,7 +685,13 @@
                         Drop all subscriptions from this topic.
 
                         <div id="operation-drop-all-subscriptions" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -280,7 +701,37 @@
                         Drop a durable subscription
 
                         <div id="operation-drop-durable-subscription" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>client-id</td>
+                                            <td>STRING</td>
+                                            <td>The client ID.</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>subscription-name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the durable subscription.</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -290,7 +741,13 @@
                         List all subscriptions.
 
                         <div id="operation-list-all-subscriptions" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -300,7 +757,13 @@
                         List all subscriptions as a string in JSON format.
 
                         <div id="operation-list-all-subscriptions-as-json" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>STRING</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -310,7 +773,13 @@
                         List only the durable subscriptions.
 
                         <div id="operation-list-durable-subscriptions" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -320,7 +789,13 @@
                         List only the durable subscriptions, as a string in JSON format.
 
                         <div id="operation-list-durable-subscriptions-as-json" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>STRING</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -330,7 +805,29 @@
                         List all the messages for the given subscription.
 
                         <div id="operation-list-messages-for-subscription" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>queue-name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the queue representing a subscription</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -340,7 +837,29 @@
                         List all the messages for the given subscription as a string in JSON format.
 
                         <div id="operation-list-messages-for-subscription-as-json" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>STRING</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>queue-name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the queue representing a subscription</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -350,7 +869,13 @@
                         List only the non-durable subscriptions.
 
                         <div id="operation-list-non-durable-subscriptions" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -360,7 +885,13 @@
                         List only the non-durable subscriptions, as a string in JSON format.
 
                         <div id="operation-list-non-durable-subscriptions-as-json" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>STRING</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -370,7 +901,37 @@
                         Gets the value of an attribute for the selected resource
 
                         <div id="operation-read-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to get the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -380,7 +941,29 @@
                         Gets the names of all children under the selected resource with the given type
 
                         <div id="operation-read-children-names" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the node under which to get the children names</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -390,7 +973,69 @@
                         Reads information about all of a resource's children that are of a given type
 
                         <div id="operation-read-children-resources" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the resource under which to get the child resources</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to get the children recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default. Ignored if the 'recursive' parameter is set to 'true'; i.e. runtime attributes can only be read in non-recursive queries.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -400,7 +1045,13 @@
                         Gets the type names of all the children under the selected resource
 
                         <div id="operation-read-children-types" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -410,7 +1061,37 @@
                         Gets description of given operation
 
                         <div id="operation-read-operation-description" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>Name of operation</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>Locale in which to return description</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -420,7 +1101,13 @@
                         Gets the names of all the operations for the given resource
 
                         <div id="operation-read-operation-names" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -430,7 +1117,77 @@
                         Reads a model resource's attribute values along with either basic or complete information about any child resources
 
                         <div id="operation-read-resource" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include complete information about child resources, recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>attributes-only</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether or not to only read the attributes on the specified resource. Cannot be used in conjunction with 'recursive' or 'recursive-depth'.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-aliases</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'true' and recursive, include children which are aliases.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -440,7 +1197,77 @@
                         Gets the description of a resource's attributes, types of children and, optionally, operations
 
                         <div id="operation-read-resource-description" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>operations</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include descriptions of the resource's operations. Default is false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inherited</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'operations' is true, whether to include descriptions of the resource's inherited operations. Default is true.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include recursively descriptions of child resources. Default is false.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-aliases</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'true' and recursive, include children which are aliases.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>The locale to get the resource description in. If null, the default locale will be used</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -450,7 +1277,13 @@
                         Remove a JMS topic.
 
                         <div id="operation-remove" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -460,7 +1293,29 @@
                         Remove messages matching the given filter from the destination.
 
                         <div id="operation-remove-messages" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>INT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>filter</td>
+                                            <td>STRING</td>
+                                            <td>A queue message filter definition. An undefined or empty filter will match all messages.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -470,7 +1325,29 @@
                         Sets the value of an attribute of the selected resource to 'undefined'
 
                         <div id="operation-undefine-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute which should be set to 'undefined'</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -480,7 +1357,29 @@
                         Returns the identity of the currently authenticated user.
 
                         <div id="operation-whoami" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>verbose</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If set to true whoami also returns the users roles.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
                     <li>
@@ -490,12 +1389,43 @@
                         Sets the value of an attribute for the selected resource
 
                         <div id="operation-write-attribute" class="collapse">
-                            More info
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to set the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>value</td>
+                                            <td>STRING</td>
+                                            <td>The value of the attribute to set the value for under the selected resource. May be null if the underlying model supports null values.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
                         </div>
                     </li>
             </ul>
         </div>
     </div>
+
 
 </div>
 <div class="container">
