@@ -1,0 +1,3146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Wildfly Model Reference</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/main.css">
+
+    <script src="http://wildscribe.github.io/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://wildscribe.github.io/index.html">Wildfly Model Reference</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="http://wildscribe.github.io/index.html">Home</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Beta1/index.html">Wildfly
+                                8.0.0.Beta1</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Alpha4/index.html">Wildfly
+                                8.0.0.Alpha4</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.1/index.html">JBoss EAP
+                                6.1.1</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP
+                                6.1.0</a></li>
+                            <li class=" active">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/index.html">JBoss EAP
+                                6.0.1</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/index.html">JBoss EAP
+                                6.0.0</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.1.1/index.html">JBoss AS7
+                                7.1.1</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.jboss.com">Get JBoss EAP</a></li>
+                <li><a href="http://www.wildfly.org">Get Wildfly</a></li>
+                <li class=""><a href="http://wildscribe.github.io/about.html">About</a></li>
+
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container">
+<div class="page-header">
+    <h1>JBoss EAP 6.0.1 Model Reference</h1>
+</div>
+
+<ol class="breadcrumb">
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/index.html">JBoss EAP 6.0.1</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/%2Fdeployment%2Findex.html">deployment</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/%2Fdeployment%2Fsubsystem%2Fdatasources%2Findex.html">subsystem=datasources</a>
+            </li>
+                <li class="active">xa-data-source</li>
+</ol>
+
+<div class="well">
+    <p>A JDBC XA data-source configuration</p>
+</div>
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#children">Children
+            (1)</h3>
+
+        <div class="collapse in" id="children">
+            <ul>
+                    <li>
+
+                            <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/deployment/subsystem/datasources/xa-data-source/xa-datasource-properties/index.html">
+                                xa-datasource-properties
+                            </a>
+                        List of xa-datasource-property
+
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#attributes">Attributes
+            (56)</h3>
+
+        <div class="collapse in" id="attributes">
+            <div class="panel">
+                <ul>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-allocation-retry">
+                                allocation-retry
+                            </a>
+                            The allocation retry element indicates the number of times that allocating a connection should be tried before throwing an exception
+                        </li>
+
+                        <div id="operation-allocation-retry" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-allocation-retry-wait-millis">
+                                allocation-retry-wait-millis
+                            </a>
+                            The allocation retry wait millis element specifies the amount of time, in milliseconds, to wait between retrying to allocate a connection
+                        </li>
+
+                        <div id="operation-allocation-retry-wait-millis" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-allow-multiple-users">
+                                allow-multiple-users
+                            </a>
+                            Specifies if multiple users will access the datasource through the getConnection(user, password) method and hence if the internal pool type should account for that
+                        </li>
+
+                        <div id="operation-allow-multiple-users" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-background-validation">
+                                background-validation
+                            </a>
+                            An element to specify that connections should be validated on a background thread versus being validated prior to use. Changing this value can be done only on disabled datasource,  requires a server restart otherwise.
+                        </li>
+
+                        <div id="operation-background-validation" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-background-validation-millis">
+                                background-validation-millis
+                            </a>
+                            The background-validation-millis element specifies the amount of time, in milliseconds, that background validation will run. Changing this value can be done only on disabled datasource,  requires a server restart otherwise
+                        </li>
+
+                        <div id="operation-background-validation-millis" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td>
+                                            <b>Min</b>
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b>Max</b>
+                                        </td>
+                                        <td>
+                                            2,147,483,647
+                                        </td>
+                                    </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-blocking-timeout-wait-millis">
+                                blocking-timeout-wait-millis
+                            </a>
+                            The blocking-timeout-millis element specifies the maximum time, in milliseconds, to block while waiting for a connection before throwing an exception. Note that this blocks only while waiting for locking a connection, and will never throw an exception if creating a new connection takes an inordinately long time
+                        </li>
+
+                        <div id="operation-blocking-timeout-wait-millis" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-check-valid-connection-sql">
+                                check-valid-connection-sql
+                            </a>
+                            Specify an SQL statement to check validity of a pool connection. This may be called when managed connection is obtained from the pool
+                        </li>
+
+                        <div id="operation-check-valid-connection-sql" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-driver-name">
+                                driver-name
+                            </a>
+                            Defines the JDBC driver the datasource should use. It is a symbolic name matching the the name of installed driver. In case the driver is deployed as jar, the name is the name of deployment unit
+                        </li>
+
+                        <div id="operation-driver-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-enabled">
+                                enabled
+                            </a>
+                            Specifies if the datasource should be enabled
+                        </li>
+
+                        <div id="operation-enabled" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-exception-sorter-class-name">
+                                exception-sorter-class-name
+                            </a>
+                            An org.jboss.jca.adapters.jdbc.ExceptionSorter that provides an isExceptionFatal(SQLException) method to validate if an exception should broadcast an error
+                        </li>
+
+                        <div id="operation-exception-sorter-class-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-exception-sorter-properties">
+                                exception-sorter-properties
+                            </a>
+                            The exception sorter properties
+                        </li>
+
+                        <div id="operation-exception-sorter-properties" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        OBJECT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-flush-strategy">
+                                flush-strategy
+                            </a>
+                            Specifies how the pool should be flush in case of an error. Valid values are: FailingConnectionOnly (default), IdleConnections and EntirePool
+                        </li>
+
+                        <div id="operation-flush-strategy" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            FailingConnectionOnly
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-idle-timeout-minutes">
+                                idle-timeout-minutes
+                            </a>
+                            The idle-timeout-minutes elements specifies the maximum time, in minutes, a connection may be idle before being closed. The actual maximum time depends also on the IdleRemover scan time, which is half of the smallest idle-timeout-minutes value of any pool. Changing this value can be done only on disabled datasource, requires a server restart otherwise.
+                        </li>
+
+                        <div id="operation-idle-timeout-minutes" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-interleaving">
+                                interleaving
+                            </a>
+                            An element to enable interleaving for XA connections
+                        </li>
+
+                        <div id="operation-interleaving" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-jndi-name">
+                                jndi-name
+                            </a>
+                            Specifies the JNDI name for the datasource
+                        </li>
+
+                        <div id="operation-jndi-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-jta">
+                                jta
+                            </a>
+                            Enable JTA integration
+                        </li>
+
+                        <div id="operation-jta" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            true
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-max-pool-size">
+                                max-pool-size
+                            </a>
+                            The max-pool-size element specifies the maximum number of connections for a pool. No more connections will be created in each sub-pool
+                        </li>
+
+                        <div id="operation-max-pool-size" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            20
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-min-pool-size">
+                                min-pool-size
+                            </a>
+                            The min-pool-size element specifies the minimum number of connections for a pool
+                        </li>
+
+                        <div id="operation-min-pool-size" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-new-connection-sql">
+                                new-connection-sql
+                            </a>
+                            Specifies an SQL statement to execute whenever a connection is added to the connection pool
+                        </li>
+
+                        <div id="operation-new-connection-sql" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-no-recovery">
+                                no-recovery
+                            </a>
+                            Specifies if the connection pool should be excluded from recovery
+                        </li>
+
+                        <div id="operation-no-recovery" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-no-tx-separate-pool">
+                                no-tx-separate-pool
+                            </a>
+                            Oracle does not like XA connections getting used both inside and outside a JTA transaction. To workaround the problem you can create separate sub-pools for the different contexts
+                        </li>
+
+                        <div id="operation-no-tx-separate-pool" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-pad-xid">
+                                pad-xid
+                            </a>
+                            Should the Xid be padded
+                        </li>
+
+                        <div id="operation-pad-xid" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-password">
+                                password
+                            </a>
+                            Specifies the password used when creating a new connection
+                        </li>
+
+                        <div id="operation-password" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-pool-prefill">
+                                pool-prefill
+                            </a>
+                            Should the pool be prefilled. Changing this value can be done only on disabled datasource, requires a server restart otherwise.
+                        </li>
+
+                        <div id="operation-pool-prefill" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-pool-use-strict-min">
+                                pool-use-strict-min
+                            </a>
+                            Specifies if the min-pool-size should be considered strictly
+                        </li>
+
+                        <div id="operation-pool-use-strict-min" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-prepared-statements-cache-size">
+                                prepared-statements-cache-size
+                            </a>
+                            The number of prepared statements per connection in an LRU cache
+                        </li>
+
+                        <div id="operation-prepared-statements-cache-size" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-query-timeout">
+                                query-timeout
+                            </a>
+                            Any configured query timeout in seconds. If not provided no timeout will be set
+                        </li>
+
+                        <div id="operation-query-timeout" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-reauth-plugin-class-name">
+                                reauth-plugin-class-name
+                            </a>
+                            The fully qualified class name of the reauthentication plugin implementation
+                        </li>
+
+                        <div id="operation-reauth-plugin-class-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-reauth-plugin-properties">
+                                reauth-plugin-properties
+                            </a>
+                            The properties for the reauthentication plugin
+                        </li>
+
+                        <div id="operation-reauth-plugin-properties" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        OBJECT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-recovery-password">
+                                recovery-password
+                            </a>
+                            The password used for recovery
+                        </li>
+
+                        <div id="operation-recovery-password" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-recovery-plugin-class-name">
+                                recovery-plugin-class-name
+                            </a>
+                            The fully qualified class name of the recovery plugin implementation
+                        </li>
+
+                        <div id="operation-recovery-plugin-class-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-recovery-plugin-properties">
+                                recovery-plugin-properties
+                            </a>
+                            The properties for the recovery plugin
+                        </li>
+
+                        <div id="operation-recovery-plugin-properties" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        OBJECT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-recovery-security-domain">
+                                recovery-security-domain
+                            </a>
+                            The security domain used for recovery
+                        </li>
+
+                        <div id="operation-recovery-security-domain" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-recovery-username">
+                                recovery-username
+                            </a>
+                            The user name used for recovery
+                        </li>
+
+                        <div id="operation-recovery-username" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-same-rm-override">
+                                same-rm-override
+                            </a>
+                            The is-same-rm-override element allows one to unconditionally set whether the javax.transaction.xa.XAResource.isSameRM(XAResource) returns true or false
+                        </li>
+
+                        <div id="operation-same-rm-override" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-security-domain">
+                                security-domain
+                            </a>
+                            Specifies the security domain which defines the javax.security.auth.Subject that are used to distinguish connections in the pool
+                        </li>
+
+                        <div id="operation-security-domain" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-set-tx-query-timeout">
+                                set-tx-query-timeout
+                            </a>
+                            Whether to set the query timeout based on the time remaining until transaction timeout. Any configured query timeout will be used if there is no transaction
+                        </li>
+
+                        <div id="operation-set-tx-query-timeout" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-share-prepared-statements">
+                                share-prepared-statements
+                            </a>
+                            Whether to share prepared statements, i.e. whether asking for same statement twice without closing uses the same underlying prepared statement
+                        </li>
+
+                        <div id="operation-share-prepared-statements" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-spy">
+                                spy
+                            </a>
+                            Enable spying of SQL statements
+                        </li>
+
+                        <div id="operation-spy" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-stale-connection-checker-class-name">
+                                stale-connection-checker-class-name
+                            </a>
+                            An org.jboss.jca.adapters.jdbc.StaleConnectionChecker that provides an isStaleConnection(SQLException) method which if it returns true will wrap the exception in an org.jboss.jca.adapters.jdbc.StaleConnectionException
+                        </li>
+
+                        <div id="operation-stale-connection-checker-class-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-stale-connection-checker-properties">
+                                stale-connection-checker-properties
+                            </a>
+                            The stale connection checker properties
+                        </li>
+
+                        <div id="operation-stale-connection-checker-properties" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        OBJECT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-track-statements">
+                                track-statements
+                            </a>
+                            Whether to check for unclosed statements when a connection is returned to the pool, result sets are closed, a statement is closed or return to the prepared statement cache. Valid values are: "false" - do not track statements, "true" - track statements and result sets and warn when they are not closed, "nowarn" - track statements but do not warn about them being unclosed
+                        </li>
+
+                        <div id="operation-track-statements" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            NOWARN
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-transaction-isolation">
+                                transaction-isolation
+                            </a>
+                            Set the java.sql.Connection transaction isolation level. Valid values are: TRANSACTION_READ_UNCOMMITTED, TRANSACTION_READ_COMMITTED, TRANSACTION_REPEATABLE_READ, TRANSACTION_SERIALIZABLE and TRANSACTION_NONE
+                        </li>
+
+                        <div id="operation-transaction-isolation" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-url-delimiter">
+                                url-delimiter
+                            </a>
+                            Specifies the delimiter for URLs in connection-url for HA datasources
+                        </li>
+
+                        <div id="operation-url-delimiter" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-url-selector-strategy-class-name">
+                                url-selector-strategy-class-name
+                            </a>
+                            A class that implements org.jboss.jca.adapters.jdbc.URLSelectorStrategy
+                        </li>
+
+                        <div id="operation-url-selector-strategy-class-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-use-ccm">
+                                use-ccm
+                            </a>
+                            Enable the use of a cached connection manager
+                        </li>
+
+                        <div id="operation-use-ccm" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            true
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-use-fast-fail">
+                                use-fast-fail
+                            </a>
+                            Whether to fail a connection allocation on the first try if it is invalid (true) or keep trying until the pool is exhausted of all potential connections (false)
+                        </li>
+
+                        <div id="operation-use-fast-fail" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-use-java-context">
+                                use-java-context
+                            </a>
+                            Setting this to false will bind the datasource into global JNDI
+                        </li>
+
+                        <div id="operation-use-java-context" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            true
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-use-try-lock">
+                                use-try-lock
+                            </a>
+                            Any configured timeout for internal locks on the resource adapter objects in seconds
+                        </li>
+
+                        <div id="operation-use-try-lock" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-user-name">
+                                user-name
+                            </a>
+                            Specify the user name used when creating a new connection
+                        </li>
+
+                        <div id="operation-user-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-valid-connection-checker-class-name">
+                                valid-connection-checker-class-name
+                            </a>
+                            An org.jboss.jca.adapters.jdbc.ValidConnectionChecker that provides an isValidConnection(Connection) method to validate a connection. If an exception is returned that means the connection is invalid. This overrides the check-valid-connection-sql element
+                        </li>
+
+                        <div id="operation-valid-connection-checker-class-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-valid-connection-checker-properties">
+                                valid-connection-checker-properties
+                            </a>
+                            The valid connection checker properties
+                        </li>
+
+                        <div id="operation-valid-connection-checker-properties" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        OBJECT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-validate-on-match">
+                                validate-on-match
+                            </a>
+                            The validate-on-match element specifies if connection validation should be done when a connection factory attempts to match a managed connection. This is typically exclusive to the use of background validation
+                        </li>
+
+                        <div id="operation-validate-on-match" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-wrap-xa-resource">
+                                wrap-xa-resource
+                            </a>
+                            Should the XAResource instances be wrapped in a org.jboss.tm.XAResourceWrapper instance
+                        </li>
+
+                        <div id="operation-wrap-xa-resource" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            true
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-xa-datasource-class">
+                                xa-datasource-class
+                            </a>
+                            The fully qualified name of the javax.sql.XADataSource implementation
+                        </li>
+
+                        <div id="operation-xa-datasource-class" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-xa-resource-timeout">
+                                xa-resource-timeout
+                            </a>
+                            The value is passed to XAResource.setTransactionTimeout(), in seconds. Default is zero
+                        </li>
+
+                        <div id="operation-xa-resource-timeout" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#operations">Operations
+            (14)</h3>
+
+        <div class="collapse in" id="operations">
+            <ul>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-flush-all-connection-in-pool">
+                            flush-all-connection-in-pool
+                        </a>
+                        Flushes all connections in the pool
+
+                        <div id="operation-flush-all-connection-in-pool" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-flush-idle-connection-in-pool">
+                            flush-idle-connection-in-pool
+                        </a>
+                        Flushes all idle connections in the pool
+
+                        <div id="operation-flush-idle-connection-in-pool" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-attribute">
+                            read-attribute
+                        </a>
+                        Gets the value of an attribute for the selected resource
+
+                        <div id="operation-read-attribute" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to get the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-names">
+                            read-children-names
+                        </a>
+                        Gets the names of all children under the selected resource with the given type
+
+                        <div id="operation-read-children-names" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the node under which to get the children names</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-resources">
+                            read-children-resources
+                        </a>
+                        Reads information about all of a resource's children that are of a given type
+
+                        <div id="operation-read-children-resources" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the resource under which to get the child resources</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to get the children recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default. Ignored if the 'recursive' parameter is set to 'true'; i.e. runtime attributes can only be read in non-recursive queries.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-types">
+                            read-children-types
+                        </a>
+                        Gets the type names of all the children under the selected resource
+
+                        <div id="operation-read-children-types" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-operation-description">
+                            read-operation-description
+                        </a>
+                        Gets the details of an operation on the given resource
+
+                        <div id="operation-read-operation-description" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The description of the operation. Undefined if not found</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>The locale to get the operation description in. If null, the default locale will be used</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-operation-names">
+                            read-operation-names
+                        </a>
+                        Gets the names of all the operations for the given resource
+
+                        <div id="operation-read-operation-names" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-resource">
+                            read-resource
+                        </a>
+                        Reads a model resource's attribute values along with either basic or complete information about any child resources
+
+                        <div id="operation-read-resource" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include complete information about child resources, recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-resource-description">
+                            read-resource-description
+                        </a>
+                        Gets the description of a resource's attributes, types of children and, optionally, operations
+
+                        <div id="operation-read-resource-description" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>operations</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include descriptions of the resource's operations. Default is false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inherited</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'operations' is true, whether to include descriptions of the resource's inherited operations. Default is true.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include recursively descriptions of child resources. Default is false.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>The locale to get the resource description in. If null, the default locale will be used</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-test-connection-in-pool">
+                            test-connection-in-pool
+                        </a>
+                        Test if a connection can be obtained
+
+                        <div id="operation-test-connection-in-pool" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-undefine-attribute">
+                            undefine-attribute
+                        </a>
+                        Sets the value of an attribute of the selected resource to 'undefined'
+
+                        <div id="operation-undefine-attribute" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute which should be set to 'undefined'</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-whoami">
+                            whoami
+                        </a>
+                        Returns the identity of the currently authenticated user.
+
+                        <div id="operation-whoami" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>verbose</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If set to true whoami also returns the users roles.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-write-attribute">
+                            write-attribute
+                        </a>
+                        Sets the value of an attribute for the selected resource
+
+                        <div id="operation-write-attribute" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to set the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>value</td>
+                                            <td>STRING</td>
+                                            <td>The value of the attribute to set the value for under the selected resource. May be null if the underlying model supports null values.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+<div class="container">
+    <hr>
+
+    <footer>
+        <p>&copy; Red Hat Pty Ltd 2013</p>
+    </footer>
+</div>
+<!-- /container -->
+<script src="http://wildscribe.github.io/js/vendor/jquery-1.10.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wildscribe.github.io/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+<script src="http://wildscribe.github.io/js/vendor/bootstrap.min.js"></script>
+
+<script src="http://wildscribe.github.io/js/main.js"></script>
+
+</body>
+</html>

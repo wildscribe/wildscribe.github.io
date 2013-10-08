@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Wildfly Model Reference</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://wildscribe.github.io/css/main.css">
+
+    <script src="http://wildscribe.github.io/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://wildscribe.github.io/index.html">Wildfly Model Reference</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="http://wildscribe.github.io/index.html">Home</a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Beta1/index.html">Wildfly
+                                8.0.0.Beta1</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/Wildfly/8.0.0.Alpha4/index.html">Wildfly
+                                8.0.0.Alpha4</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.1/index.html">JBoss EAP
+                                6.1.1</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.1.0/index.html">JBoss EAP
+                                6.1.0</a></li>
+                            <li class=" active">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/index.html">JBoss EAP
+                                6.0.1</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.0/index.html">JBoss EAP
+                                6.0.0</a></li>
+                            <li class=" ">
+                                <a href="http://wildscribe.github.io/JBoss%20AS7/7.1.1/index.html">JBoss AS7
+                                7.1.1</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.jboss.com">Get JBoss EAP</a></li>
+                <li><a href="http://www.wildfly.org">Get Wildfly</a></li>
+                <li class=""><a href="http://wildscribe.github.io/about.html">About</a></li>
+
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container">
+<div class="page-header">
+    <h1>JBoss EAP 6.0.1 Model Reference</h1>
+</div>
+
+<ol class="breadcrumb">
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/index.html">JBoss EAP 6.0.1</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/%2Fsubsystem%2Finfinispan%2Findex.html">subsystem=infinispan</a>
+            </li>
+            <li>
+                <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/%2Fsubsystem%2Finfinispan%2Fcache-container%2Findex.html">cache-container</a>
+            </li>
+                <li class="active">distributed-cache</li>
+</ol>
+
+<div class="well">
+    <p>A distributed cache</p>
+</div>
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#children">Children
+            (11)</h3>
+
+        <div class="collapse in" id="children">
+            <ul>
+                    <li>
+
+                                <b>binary-keyed-jdbc-store</b>
+                        The binary keyed cache JDBC store configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/binary-keyed-jdbc-store/BINARY_KEYED_JDBC_STORE/index.html">
+                                        BINARY_KEYED_JDBC_STORE
+                                    </a>
+                                    The cache store configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>eviction</b>
+                        The cache eviction configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/eviction/EVICTION/index.html">
+                                        EVICTION
+                                    </a>
+                                    The cache eviction configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>expiration</b>
+                        The cache expiration configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/expiration/EXPIRATION/index.html">
+                                        EXPIRATION
+                                    </a>
+                                    The cache expiration configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>file-store</b>
+                        The cache file store configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/file-store/FILE_STORE/index.html">
+                                        FILE_STORE
+                                    </a>
+                                    The cache store configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>locking</b>
+                        The locking configuration of the cache.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/locking/LOCKING/index.html">
+                                        LOCKING
+                                    </a>
+                                    The locking configuration of the cache.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>mixed-keyed-jdbc-store</b>
+                        The mixed keyed cache JDBC store configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/mixed-keyed-jdbc-store/MIXED_KEYED_JDBC_STORE/index.html">
+                                        MIXED_KEYED_JDBC_STORE
+                                    </a>
+                                    The cache store configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>remote-store</b>
+                        The cache remote store configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/remote-store/REMOTE_STORE/index.html">
+                                        REMOTE_STORE
+                                    </a>
+                                    The cache store configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>state-transfer</b>
+                        The state transfer configuration for distribution and replicated caches.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/state-transfer/STATE_TRANSFER/index.html">
+                                        STATE_TRANSFER
+                                    </a>
+                                    The state transfer configuration for distribution and replicated caches.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>store</b>
+                        The cache store configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/store/STORE/index.html">
+                                        STORE
+                                    </a>
+                                    The cache store configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>string-keyed-jdbc-store</b>
+                        The string keyed cache JDBC store configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/string-keyed-jdbc-store/STRING_KEYED_JDBC_STORE/index.html">
+                                        STRING_KEYED_JDBC_STORE
+                                    </a>
+                                    The cache store configuration.
+                                </li>
+                        </ul>
+                    <li>
+
+                                <b>transaction</b>
+                        The cache transaction configuration.
+
+                    </li>
+                        <ul>
+                                <li>
+                                    <a href="http://wildscribe.github.io/JBoss%20EAP/6.0.1/subsystem/infinispan/cache-container/distributed-cache/transaction/TRANSACTION/index.html">
+                                        TRANSACTION
+                                    </a>
+                                    The cache transaction configuration.
+                                </li>
+                        </ul>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#attributes">Attributes
+            (13)</h3>
+
+        <div class="collapse in" id="attributes">
+            <div class="panel">
+                <ul>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-async-marshalling">
+                                async-marshalling
+                            </a>
+                            If enabled, this will cause marshalling of entries to be performed asynchronously.
+                        </li>
+
+                        <div id="operation-async-marshalling" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-batching">
+                                batching
+                            </a>
+                            If enabled, the invocation batching API will be made available for this cache.
+                        </li>
+
+                        <div id="operation-batching" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            false
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        BOOLEAN
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-indexing">
+                                indexing
+                            </a>
+                            If enabled, entries will be indexed when they are added to the cache. Indexes will be updated as entries change or are removed.
+                        </li>
+
+                        <div id="operation-indexing" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            NONE
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-jndi-name">
+                                jndi-name
+                            </a>
+                            The jndi-name to which to bind this cache instance.
+                        </li>
+
+                        <div id="operation-jndi-name" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-l1-lifespan">
+                                l1-lifespan
+                            </a>
+                            Maximum lifespan of an entry placed in the L1 cache. This element configures the L1 cache behavior in 'distributed' caches instances. In any other cache modes, this element is ignored.
+                        </li>
+
+                        <div id="operation-l1-lifespan" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            600000
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-mode">
+                                mode
+                            </a>
+                            Sets the clustered cache mode, ASYNC for asynchronous operation, or SYNC for synchronous operation.
+                        </li>
+
+                        <div id="operation-mode" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-module">
+                                module
+                            </a>
+                            The module whose class loader should be used when building this cache's configuration.
+                        </li>
+
+                        <div id="operation-module" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-owners">
+                                owners
+                            </a>
+                            Number of cluster-wide replicas for each cache entry.
+                        </li>
+
+                        <div id="operation-owners" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-queue-flush-interval">
+                                queue-flush-interval
+                            </a>
+                            In ASYNC mode, this attribute controls how often the asynchronous thread used to flush the replication queue runs. This should be a positive integer which represents thread wakeup time in milliseconds.
+                        </li>
+
+                        <div id="operation-queue-flush-interval" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-queue-size">
+                                queue-size
+                            </a>
+                            In ASYNC mode, this attribute can be used to trigger flushing of the queue when it reaches a specific threshold.
+                        </li>
+
+                        <div id="operation-queue-size" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-remote-timeout">
+                                remote-timeout
+                            </a>
+                            In SYNC mode, the timeout (in ms) used to wait for an acknowledgment when making a remote call, after which the call is aborted and an exception is thrown.
+                        </li>
+
+                        <div id="operation-remote-timeout" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            17500
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        LONG
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-start">
+                                start
+                            </a>
+                            The cache start mode, which can be EAGER (immediate start) or LAZY (on-demand start).
+                        </li>
+
+                        <div id="operation-start" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            LAZY
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        STRING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <li>
+                            <a data-toggle="collapse" data-target="#operation-virtual-nodes">
+                                virtual-nodes
+                            </a>
+                            Controls the number of virtual nodes per "real" node. If numVirtualNodes is 1, then virtual nodes are disabled. The topology aware consistent hash must be used if you wish to take advantage of virtual nodes. A default of 1 is used.
+                        </li>
+
+                        <div id="operation-virtual-nodes" class="collapse">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <b>Default Value</b>
+                                        </td>
+                                        <td>
+                                            1
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <b>Type</b>
+                                    </td>
+                                    <td>
+                                        INT
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Nillable</b>
+                                    </td>
+                                    <td>
+                                        true
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Expressions Allowed</b>
+                                    </td>
+                                    <td>
+                                        false
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="page-header">
+
+        <h3 class="resource-header" data-toggle="collapse" data-target="#operations">Operations
+            (13)</h3>
+
+        <div class="collapse in" id="operations">
+            <ul>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-add">
+                            add
+                        </a>
+                        Add a distributed cache to this cache container
+
+                        <div id="operation-add" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>start</td>
+                                            <td>STRING</td>
+                                            <td>The cache start mode, which can be EAGER (immediate start) or LAZY (on-demand start).</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>batching</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If enabled, the invocation batching API will be made available for this cache.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>indexing</td>
+                                            <td>STRING</td>
+                                            <td>If enabled, entries will be indexed when they are added to the cache. Indexes will be updated as entries change or are removed.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jndi-name</td>
+                                            <td>STRING</td>
+                                            <td>The jndi-name to which to bind this cache instance.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>module</td>
+                                            <td>STRING</td>
+                                            <td>The module whose class loader should be used when building this cache's configuration.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>async-marshalling</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If enabled, this will cause marshalling of entries to be performed asynchronously.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>mode</td>
+                                            <td>STRING</td>
+                                            <td>Sets the clustered cache mode, ASYNC for asynchronous operation, or SYNC for synchronous operation.</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>queue-size</td>
+                                            <td>INT</td>
+                                            <td>In ASYNC mode, this attribute can be used to trigger flushing of the queue when it reaches a specific threshold.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>queue-flush-interval</td>
+                                            <td>LONG</td>
+                                            <td>In ASYNC mode, this attribute controls how often the asynchronous thread used to flush the replication queue runs. This should be a positive integer which represents thread wakeup time in milliseconds.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>remote-timeout</td>
+                                            <td>LONG</td>
+                                            <td>In SYNC mode, the timeout (in ms) used to wait for an acknowledgment when making a remote call, after which the call is aborted and an exception is thrown.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>owners</td>
+                                            <td>INT</td>
+                                            <td>Number of cluster-wide replicas for each cache entry.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>virtual-nodes</td>
+                                            <td>INT</td>
+                                            <td>Controls the number of virtual nodes per "real" node. If numVirtualNodes is 1, then virtual nodes are disabled. The topology aware consistent hash must be used if you wish to take advantage of virtual nodes. A default of 1 is used.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>l1-lifespan</td>
+                                            <td>LONG</td>
+                                            <td>Maximum lifespan of an entry placed in the L1 cache. This element configures the L1 cache behavior in 'distributed' caches instances. In any other cache modes, this element is ignored.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>state-transfer</td>
+                                            <td>OBJECT</td>
+                                            <td>The state transfer configuration for distribution and replicated caches.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-attribute">
+                            read-attribute
+                        </a>
+                        Gets the value of an attribute for the selected resource
+
+                        <div id="operation-read-attribute" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to get the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-names">
+                            read-children-names
+                        </a>
+                        Gets the names of all children under the selected resource with the given type
+
+                        <div id="operation-read-children-names" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the node under which to get the children names</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-resources">
+                            read-children-resources
+                        </a>
+                        Reads information about all of a resource's children that are of a given type
+
+                        <div id="operation-read-children-resources" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>child-type</td>
+                                            <td>STRING</td>
+                                            <td>The name of the resource under which to get the child resources</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to get the children recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default. Ignored if the 'recursive' parameter is set to 'true'; i.e. runtime attributes can only be read in non-recursive queries.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-children-types">
+                            read-children-types
+                        </a>
+                        Gets the type names of all the children under the selected resource
+
+                        <div id="operation-read-children-types" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-operation-description">
+                            read-operation-description
+                        </a>
+                        Gets the details of an operation on the given resource
+
+                        <div id="operation-read-operation-description" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The description of the operation. Undefined if not found</td>
+                                            <td>false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>The locale to get the operation description in. If null, the default locale will be used</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-operation-names">
+                            read-operation-names
+                        </a>
+                        Gets the names of all the operations for the given resource
+
+                        <div id="operation-read-operation-names" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>LIST</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-resource">
+                            read-resource
+                        </a>
+                        Reads a model resource's attribute values along with either basic or complete information about any child resources
+
+                        <div id="operation-read-resource" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include complete information about child resources, recursively. If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-runtime</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include runtime attributes (i.e. those whose value does not come from the persistent configuration) in the response. If absent, false is the default.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>include-defaults</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Boolean to enable/disable default reading. In case it is set to false only attribute set by user are returned ignoring undefined.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-read-resource-description">
+                            read-resource-description
+                        </a>
+                        Gets the description of a resource's attributes, types of children and, optionally, operations
+
+                        <div id="operation-read-resource-description" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>OBJECT</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>operations</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include descriptions of the resource's operations. Default is false</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inherited</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If 'operations' is true, whether to include descriptions of the resource's inherited operations. Default is true.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include recursively descriptions of child resources. Default is false.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>proxies</td>
+                                            <td>BOOLEAN</td>
+                                            <td>Whether to include remote resources in a recursive query (i.e. host level resources in a query of the domain root; running server resources in a query of a host). If absent, false is the default</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>recursive-depth</td>
+                                            <td>INT</td>
+                                            <td>The depth to which information about child resources should be included.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>locale</td>
+                                            <td>STRING</td>
+                                            <td>The locale to get the resource description in. If null, the default locale will be used</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-remove">
+                            remove
+                        </a>
+                        Remove a cache from this container.
+
+                        <div id="operation-remove" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-undefine-attribute">
+                            undefine-attribute
+                        </a>
+                        Sets the value of an attribute of the selected resource to 'undefined'
+
+                        <div id="operation-undefine-attribute" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute which should be set to 'undefined'</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-whoami">
+                            whoami
+                        </a>
+                        Returns the identity of the currently authenticated user.
+
+                        <div id="operation-whoami" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>verbose</td>
+                                            <td>BOOLEAN</td>
+                                            <td>If set to true whoami also returns the users roles.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-target="#operation-write-attribute">
+                            write-attribute
+                        </a>
+                        Sets the value of an attribute for the selected resource
+
+                        <div id="operation-write-attribute" class="collapse">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Return Type</b></td>
+                                    <td>undefined</td>
+                                </tr>
+                                    <tr>
+                                        <td><b>Request Parameter</b></td>
+                                        <td><b>Type</b></td>
+                                        <td><b>Description</b></td>
+                                        <td><b>Nillable</b></td>
+                                        <td><b>Required</b></td>
+                                        <td><b>Expressions Allowed</b></td>
+                                    </tr>
+                                        <tr>
+                                            <td>name</td>
+                                            <td>STRING</td>
+                                            <td>The name of the attribute to set the value for under the selected resource</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>value</td>
+                                            <td>STRING</td>
+                                            <td>The value of the attribute to set the value for under the selected resource. May be null if the underlying model supports null values.</td>
+                                            <td>true</td>
+                                            <td>false</td>
+                                            <td>false</td>
+                                        </tr>
+
+                            </table>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+<div class="container">
+    <hr>
+
+    <footer>
+        <p>&copy; Red Hat Pty Ltd 2013</p>
+    </footer>
+</div>
+<!-- /container -->
+<script src="http://wildscribe.github.io/js/vendor/jquery-1.10.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://wildscribe.github.io/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+<script src="http://wildscribe.github.io/js/vendor/bootstrap.min.js"></script>
+
+<script src="http://wildscribe.github.io/js/main.js"></script>
+
+</body>
+</html>
